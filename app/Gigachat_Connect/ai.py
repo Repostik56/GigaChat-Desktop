@@ -3,7 +3,7 @@ import winsound
 import threading
 from app.Config import config
 
-giga = GigaChat(credentials="Authorization Key", #Замените Authorization Key на свой
+giga = GigaChat(credentials="YmJlMDk1ODYtOGVhZi00YzQyLTk2NTYtNGQ4OTIwZjQ1NmIyOjc0NGFlNTczLWI0YTUtNDhhMi1iMDAxLTk4Nzk1YTllZGViMw==", #Замените Authorization Key на свой
                 verify_ssl_certs=False)
 
 def success():
@@ -27,3 +27,4 @@ def chat_ai(question):
     except Exception:
            threading.Thread(target=error).start()
            return f'Ошибка: нет доступа в интернет!'
+
